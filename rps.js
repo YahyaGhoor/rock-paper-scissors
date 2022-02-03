@@ -61,7 +61,7 @@ function playGame() {
   let computerWinsTotal = 0;
 
   for (let i = 0; i < 5; i++) {
-    let result = playRound();
+    let result = checkInput();
     if (result == "player win") {
       playerWinsTotal++;
     } else if (result == "player loss") {
