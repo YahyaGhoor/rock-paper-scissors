@@ -10,3 +10,9 @@ function computerPlay() {
   }
   return computerChoice;
 }
+
+function getPlayerChoice() {
+  let playerChoice = prompt("Please pick an object", "rock");
+
+  return playerChoice.toLowerCase();
+}
