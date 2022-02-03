@@ -69,7 +69,7 @@ function playGame() {
       playerWinsTotal++;
     } else if (result == "player loss") {
       computerWinsTotal++;
-    } else continue;
+    } else i--;
   }
 
   if (playerWinsTotal > computerWinsTotal) {
