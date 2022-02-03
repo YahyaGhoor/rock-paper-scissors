@@ -63,3 +63,5 @@ function playGame() {
     console.log(`It's a draw! ${computerWinsTotal}-${playerWinsTotal}`);
   }
 }
+
+playGame()
