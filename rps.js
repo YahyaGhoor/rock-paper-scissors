@@ -13,7 +13,9 @@ function computerPlay() {
 
 function getPlayerChoice() {
   let playerChoice = prompt("Please pick a hand", "Paper");
-
+  if (playerChoice == null) { 
+    return alert("You cancelled the game :(  Reload the page to play again.")
+  } 
   return playerChoice.toLowerCase();
 }
 
