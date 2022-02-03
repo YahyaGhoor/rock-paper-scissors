@@ -12,16 +12,13 @@ function computerPlay() {
 }
 
 function getPlayerChoice() {
-  let playerChoice = prompt("Please pick a hand", "Paper");
+  let playerChoice = prompt("Please pick a hand", "Paper");  
 
   return playerChoice.toLowerCase();
 }
 
 function playRound() {
-  let result;
-  playerChoice = getPlayerChoice();
-  computerChoice = computerPlay();
-
+    
   if (playerChoice == "rock" && computerChoice == "scissors") {
     console.log("You win! rock beats scissors");
     result = "player win";
@@ -37,15 +34,12 @@ function playRound() {
   } else {
     console.log(`You lose! ${computerChoice} beats ${playerChoice}`);
     result = "player loss";
-
   }
   return result;
 }
 
 function playGame() {
-  alert(`You will now play 5 rounds of Rock Paper Scissors against the 
-         computer. Press F12 to view the console and see your score.
-         Please pick a hand and select "Okay". Select cancel to stop.`)
+  
   let playerWinsTotal = 0;
   let computerWinsTotal = 0;
 
