@@ -17,7 +17,7 @@ function getPlayerChoice() {
   return playerChoice.toLowerCase();
 }
 
-function playRound() {
+function playRound(playerChoice, computerChoice) {
     
   if (playerChoice == "rock" && computerChoice == "scissors") {
     console.log("You win! rock beats scissors");
