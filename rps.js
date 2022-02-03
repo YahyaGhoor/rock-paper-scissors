@@ -79,6 +79,8 @@ function playGame() {
   } else {
     console.log(`It's a draw! ${computerWinsTotal}-${playerWinsTotal}`);
   }
+  
+  console.log("Reload the page to play again!");
 }
 
 playGame()
