@@ -12,7 +12,7 @@ function computerPlay() {
 }
 
 function getPlayerChoice() {
-  let playerChoice = prompt("Please pick a hand", "Paper");  
+  let playerChoice = prompt("Please pick a hand", "Paper");
 
   return playerChoice.toLowerCase();
 }
@@ -21,21 +21,21 @@ function checkInput () {
     let result;
     let playerChoice = getPlayerChoice();
     let computerChoice = computerPlay();
-      
+
     if (
-      playerChoice.toLowerCase() == "rock" 
+      playerChoice.toLowerCase() == "rock"
       || playerChoice.toLowerCase() == "paper"
       || playerChoice.toLowerCase() == "scissors"
-    ) { 
+    ) {
       result = playRound(playerChoice, computerChoice);
-      return result;   
+      return result;
     } else {
       return alert("Please select either rock, paper or scissors");
     }
   }
 
 function playRound(playerChoice, computerChoice) {
-    
+
   if (playerChoice == "rock" && computerChoice == "scissors") {
     console.log("You win! rock beats scissors");
     result = "player win";
@@ -56,7 +56,7 @@ function playRound(playerChoice, computerChoice) {
 }
 
 function playGame() {
-  
+
   let playerWinsTotal = 0;
   let computerWinsTotal = 0;
 
@@ -67,7 +67,7 @@ function playGame() {
     } else if (result == "player loss") {
       computerWinsTotal++;
     } else continue;
-  } 
+  }
 
   if (playerWinsTotal > computerWinsTotal) {
     console.log(`You win ${playerWinsTotal}-${computerWinsTotal}, Congrats!`);
