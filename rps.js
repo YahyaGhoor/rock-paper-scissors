@@ -18,21 +18,21 @@ function getPlayerChoice() {
 }
 
 function checkInput () {
-    let result;
-    let playerChoice = getPlayerChoice();
-    let computerChoice = computerPlay();
+  let result;
+  let playerChoice = getPlayerChoice();
+  let computerChoice = computerPlay();
 
-    if (
-      playerChoice.toLowerCase() == "rock"
-      || playerChoice.toLowerCase() == "paper"
-      || playerChoice.toLowerCase() == "scissors"
-    ) {
-      result = playRound(playerChoice, computerChoice);
-      return result;
-    } else {
-      return alert("Please select either rock, paper or scissors");
-    }
+  if (
+    playerChoice.toLowerCase() == "rock"
+    || playerChoice.toLowerCase() == "paper"
+    || playerChoice.toLowerCase() == "scissors"
+  ) {
+    result = playRound(playerChoice, computerChoice);
+    return result;
+  } else {
+    return alert("Please select either rock, paper or scissors");
   }
+}
 
 function playRound(playerChoice, computerChoice) {
 
