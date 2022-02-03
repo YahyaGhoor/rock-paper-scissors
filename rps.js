@@ -58,7 +58,7 @@ function playRound(playerChoice, computerChoice) {
 }
 
 function playGame() {
-  alert("You will now play 5 rounds of Rock Paper Scissors against the computer. Press F12 to view the console and see your score. Please pick a hand and select \"OK\". Select cancel to stop.") 
+  alert("You will now play 5 rounds of Rock Paper Scissors against the computer(draws don't count). Press F12 to view the console and see your score. Please select \"OK\", then type out a hand and select \"OK\". Select cancel to stop.") 
 
   let playerWinsTotal = 0;
   let computerWinsTotal = 0;
