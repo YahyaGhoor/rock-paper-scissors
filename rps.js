@@ -43,6 +43,9 @@ function playRound() {
 }
 
 function playGame() {
+  alert(`You will now play 5 rounds of Rock Paper Scissors against the 
+         computer. Press F12 to view the console and see your score.
+         Please pick a hand and select "Okay". Select cancel to stop.`)
   let playerWinsTotal = 0;
   let computerWinsTotal = 0;
 
@@ -58,7 +61,7 @@ function playGame() {
   if (playerWinsTotal > computerWinsTotal) {
     console.log(`You win ${playerWinsTotal}-${computerWinsTotal}, Congrats!`);
   } else if (playerWinsTotal < computerWinsTotal) {
-    console.log(`You win ${computerWinsTotal}-${playerWinsTotal}, Try again next time!`);
+    console.log(`You lose ${playerWinsTotal}-${computerWinsTotal}, Try again next time!`);
   } else {
     console.log(`It's a draw! ${computerWinsTotal}-${playerWinsTotal}`);
   }
