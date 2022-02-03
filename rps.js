@@ -48,7 +48,7 @@ function playRound(playerChoice, computerChoice) {
     console.log("You win! scissors beats paper");
     result = "player win";
   } else if (playerChoice == computerChoice) {
-    console.log("It's a draw!, no one wins");
+    console.log(`It's a draw!, you both chose ${playerChoice}`);
     result = "draw";
   } else {
     console.log(`You lose! ${computerChoice} beats ${playerChoice}`);
